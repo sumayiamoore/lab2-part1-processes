@@ -1,3 +1,5 @@
+all: prog1 prog2 my3proc
+
 prog1: main.c
 	gcc main.c -o prog1
 
@@ -6,3 +8,6 @@ prog2: main2.c
 
 my3proc: main3.c
 	gcc main3.c -o my3proc
+
+clean:
+	rm -f prog1 prog2 my3proc
